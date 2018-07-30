@@ -58,6 +58,9 @@
         </div>
     </div>
 
+    <section class="container-fluid mt-3">
+        <h1 class="h3">Events in Bangalore</h1>
+    </section>
     <section class="mb-5">
 
         <div class="main">
@@ -88,15 +91,15 @@
         <div class="row mt-3">
 
 
-            <div class="grey lighten-4 grey-text align-items-center  col-4 col-xs-4  col-sm-2  d-flex flex-column p-2">
+            <div class=" align-items-center  col-4 col-xs-4  col-sm-2  d-flex flex-column p-2">
                 <span>
                     <i class="far fa-2x fa-calendar-alt"></i>
                 </span>
                 <span>
-                    Events
+                    All
                 </span>
             </div>
-            <div class="align-items-center  col-4 col-xs-4  col-sm-2 d-flex flex-column p-2">
+            <div class="grey lighten-4 grey-text align-items-center  col-4 col-xs-4  col-sm-2 d-flex flex-column p-2">
 
                 <span>
                     <i class="fas fa-2x  fa-utensils"></i>
@@ -127,10 +130,10 @@
             <div class="grey lighten-4 grey-text align-items-center  col-4 col-xs-4  col-sm-2 d-flex flex-column p-2">
 
                 <span>
-                    <i class="fas fa-shopping-cart fa-2x "></i>
+                    <i class="far fa-2x fa-calendar-alt"></i>
                 </span>
                 <span>
-                    Shopping
+                    Events
                 </span>
             </div>
             <div class="grey lighten-4 grey-text align-items-center  col-4 col-xs-4  col-sm-2 d-flex flex-column p-2">
@@ -150,359 +153,124 @@
     <section class="container pb-3 text-center">
 
         <div class="row">
-            <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center">
-                <div class="row">
-                    <div class="col-md-6">
-                        <!-- Material checked -->
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="materialChecked1" checked>
-                            <label class="form-check-label" for="materialChecked1">type1</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <!-- Material checked -->
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
-                            <label class="form-check-label" for="materialChecked2">Type2</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 col-xs-12 col-sm-6 col-12">
-                <select class="mdb-select">
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
+            <div class="col-12 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <select class="mdb-select colorful-select dropdown-primary" multiple searchable="Search here..">
+                    <option value="" disabled selected>Where</option>
+                    <option value="1">Koramangala</option>
+                    <option value="2">MG Road</option>
+                    <option value="3">Whitefield</option>
+                    <option value="4">Indiranagar</option>
+                    <option value="5">Masure Road</option>
                 </select>
 
             </div>
-            <div class="col-md-6 col-lg-3 col-xs-12 col-sm-6 col-12">
+            <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6 col-12">
+                <select class="mdb-select">
+                    <option value="" disabled selected>When</option>
+                    <option value="1">Today</option>
+                    <option value="2">Tomarrow</option>
+                    <option value="3">This Weekend</option>
+                    <option value="3">This Week</option>
+                    <option value="3">This Month</option>
+                </select>
+
+            </div>
+            <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6 col-12">
 
                 <select class="mdb-select">
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
+                    <option value="" disabled selected>How much</option>
+                    <option value="1">0 - 500</option>
+                    <option value="2">501 - 1000</option>
+                    <option value="3">1001 - 2000</option>
+                    <option value="3">2000 above</option>
+
                 </select>
             </div>
-            <div class="col-md-6 col-lg-3 col-xs-12 col-sm-6 col-12">
-                <div class="d-flex justify-content-center my-4">
-                    <span class="font-weight-bold blue-text mr-2">0</span>
-                    <form class="range-field w-100">
-                        <input class="no-border" type="range" min="0" max="500" />
-                    </form>
-                    <span class="font-weight-bold blue-text ml-2">500</span>
-                </div>
+            <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6 col-12">
+                <select class="mdb-select">
+                    <option value="" disabled selected>Sort by</option>
+                    <option value="1">Popularity</option>
+                    <option value="1">Recommended</option>
+                    <option value="2">Near by me</option>
+                    <option value="3">Price high to low</option>
+                    <option value="3">Price low to high</option>
+                </select>
             </div>
         </div>
     </section>
-    <section class="container pb-3 mt-5">
+
+    <section class="container pb-3">
         <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-4 col-4">
-                <h2 class="h4">Events in Bangalore</h2>
-            </div>
-            <div class="col-md-8 col-sm-6 col-xs-8 col-8">
-                <div class="row">
-                    <div class="col-md-3">Sort By : </div>
-                    <div class="col-md-3">Name</div>
-                    <div class="col-md-3 border-left border-dark border-right">Popularity</div>
-                    <div class="col-md-3">Price</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container pb-3 text-center">
-        <div class="row mt-3">
             <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/1.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
+                    <div class="view view-cascade overlay  zoom">
+                        <img class="card-img-top" src="./img/lights-party-dancing-music.jpg" alt="Card image cap">
+                        <div class="mask flex-center rgba-black-light waves-effect waves-light  ">
+                                <h5 class="h6 blue p-1 pl-2 pr-2 white-text rounded">VIEW</h5>
+                            </div>
                     </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas  fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
+                    <!-- transform: rotate(90deg); -->
+                    <div class="card-body card-body-cascade pb-2">
+                        <h3 class="h6 card-title pb-1 mb-0">Heaven on Earth Spa</h3>
+                        <p class="card-text pb-1 mb-0">Indiranagar</p>
 
+                    </div>
+                    <div class="rounded-bottom border-top">
+                        <div class="row m-0 p-0">
+                            <div class="align-items-center border-right col-md-4 d-flex green justify-content-center p-2 white-text">
+                                <div class="row">
+                                    <h6 class="m-0 dark-green-text">
+                                        <!-- <i class="fas fa-tag green-text darken-2"></i> --> 5 deals</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4 align-items-center border-right col-md-4 d-flex justify-content-center p-2">
+                                <div class="row">
+                                    <h6 class="m-0">
+                                        45 % off</h6>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4 align-items-center border-right col-md-4 d-flex justify-content-center p-2">
+                                <div class="row">
+                                    <h6 class="m-0">
+                                        <i class="fas fa-rupee-sign pr-1 "></i> 499</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-bottom border-top lighten-2 text-center text-muted p-2 pr-3 pl-3">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <a href="#" class="grey-text">
+                                    21
+                                    <i class="fas fa-eye pr-1 black-text"> </i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="grey-text">
+                                    3
+                                    <i class="far fa-heart pr-1 red-text"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="grey-text">
+                                    2
+                                    <i class="far fa-star pr-1 yellow-text"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="grey-text">
+                                    11
+                                    <i class="fas fa-share-alt pr-1 blue-text"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/2.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/3.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/1.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/1.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas  fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/2.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/3.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/1.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/1.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas  fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/2.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/3.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/1.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/1.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas  fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/2.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/3.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-xs-12 col-sm-6 col-md-6  col-lg-3">
-                <div class="card card-cascade narrower mt-5">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="./img/1.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1">
-                            <i class="fas fa-utensils"></i> Culinary</h5>
-                        <h4 class="card-title">Cheat day inspirations</h4>
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam .</p>
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 

@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Brewed Bros</title>
+    <link rel="stylesheet" href="css/fontawesome_all.css">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdbfull.css" rel="stylesheet">
+
+    <link href="css/slick.min.css" rel="stylesheet">
+    <link href="css/slick-theme.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/flip.css" rel="stylesheet">
+
+    <style>
+        .form-elegant .font-small {
+            font-size: 0.8rem;
+        }
+
+        .form-elegant .z-depth-1a {
+            -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+            box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+        }
+
+        .form-elegant .z-depth-1-half,
+        .form-elegant .btn:hover {
+            -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+            box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+        }
+
+        .form-elegant .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-dialog .form-elegant .btn .fa {
+            color: #2196f3 !important;
+        }
+
+        .form-elegant .modal-body,
+        .form-elegant .modal-footer {
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: sticky; top: 0; z-index: 10;">
+        <div class="grey lighten-2">
+            <div class="container-fluid loc-bar d-flex">
+                <div class="mr-auto p-1" data-toggle="modal" data-target="#search-dialog">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="d-none d-sm-inline"> Select Location</span> &nbsp;</span>
+                    <span class="cursor-pointer border border-grey pl-2 pt-1 pb-1 pr-2 border-radius-15 d-inline-block box-shadow">
+                        <span>Bangalore
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="p-2 d-none d-sm-inline">Create Event</div>
+                <div class="p-2 d-none d-sm-inline">|</div>
+                <div class="p-2 d-none d-sm-inline">List Your Business</div>
+                <div class="p-2 d-none d-sm-inline">|</div>
+                <div class="p-2" data-toggle="modal" data-target="#login-form"><i class="fas fa-user-tie"></i></div>
+                <div class="p-2" data-toggle="modal" data-target="#login-form"><i class="fas fa-theater-masks"></i></div>
+                <div class="p-2" data-toggle="modal" data-target="#login-form"><i class="fas fa-map-marker-alt"></i> Bangalore</div>
+
+            </div>
+        </div>
+        <div class="grey lighten-3 p-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a class="logo navbar-brand" href="/">
+                            <strong>
+                                <img src="img/f3.png" alt="Brued Bros" width="40" height="40"> Brued Bros
+                            </strong>
+                        </a>
+                    </div>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-4">
+                        <!-- <input type="text" class="search-btn m-0">
+                        <button type="button" class="btn btn-primary m-0 waves-effect ">Search</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+
+        <section class="container  mt-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="/img/1.jpg" style="width: 100%;height:100%" alt="" />
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center " style="height: 365px;">
+
+                        <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius cumque cum voluptatibus accusantium
+                                odit non aut ipsum. Odio officia, totam eaque nulla nam quis ipsam, quod quia atque sapiente
+                                culpa? With supporting text below as a natural lead-in to additional content.Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Voluptatum mollitia repellat est officia ad
+                                perferendis hic nulla! Reprehenderit molestiae consectetur ratione odio distinctio autem,
+                                nostrum, to additional content. </p>
+                            <!-- <a class="btn btn-success btn-sm">Go somewhere</a> -->
+                        </div>
+                        <div class="card-footer text-muted grey white-text">
+                            <p class="mb-0">2 days ago </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container  mt-3">
+            <div class="row">
+                <div class="col-md-8">
+
+                    <div class="card text-center">
+                        <div class="card-header black text-muted">
+                            Event Details
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table product-table">
+                                    <!-- Table head -->
+                                    <thead>
+                                        <tr>
+                                            <th class="font-weight-bold">
+                                                <strong>Ticket Name</strong>
+                                            </th>
+                                            <th class="font-weight-bold">
+                                                <strong>Type</strong>
+                                            </th>
+                                            <th></th>
+                                            <th class="font-weight-bold">
+                                                <strong>Price</strong>
+                                            </th>
+                                            <th class="font-weight-bold">
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h5 class="mt-3">
+                                                    <strong>iPhone</strong>
+                                                </h5>
+                                                <p class="text-muted">Apple</p>
+                                            </td>
+                                            <td>White</td>
+                                            <td></td>
+                                            <td>$800</td>
+                                            <td class="text-center">
+                                                <!--  <div class="btn-group radio-group ml-2" data-toggle="buttons">
+                                                    <label class="btn btn-sm btn-primary btn-rounded waves-effect waves-light">
+                                                        <input type="radio" name="options" id="option1">—
+                                                    </label>
+                                                    <label class="btn btn-sm btn-primary waves-effect waves-light">
+                                                        <input type="radio" name="options" id="option1">123
+                                                    </label>
+                                                    <label class="btn btn-sm btn-primary btn-rounded waves-effect waves-light">
+                                                        <input type="radio" name="options" id="option2">+
+                                                    </label>
+                                                </div> -->
+
+                                                <div class="btn-group radio-group ml-2" data-toggle="buttons">
+                                                    <label class="btn btn-sm btn-primary btn-rounded waves-effect waves-light">
+                                                        <input type="radio" name="options" id="option2">Buy Ticket
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 class="mt-3">
+                                                    <strong>iPhone</strong>
+                                                </h5>
+                                                <p class="text-muted">Apple</p>
+                                            </td>
+                                            <td>White</td>
+                                            <td></td>
+                                            <td>$800</td>
+                                            <td class="text-center">
+                                                <div class="btn-group radio-group ml-2" data-toggle="buttons">
+                                                    <label class="btn btn-sm btn-primary btn-rounded waves-effect waves-light">
+                                                        <input type="radio" name="options" id="option1">—
+                                                    </label>
+                                                    <label class="btn btn-sm btn-primary waves-effect waves-light">
+                                                        <input type="radio" name="options" id="option1">123
+                                                    </label>
+                                                    <label class="btn btn-sm btn-primary btn-rounded waves-effect waves-light">
+                                                        <input type="radio" name="options" id="option2">+
+                                                    </label>
+                                                </div>
+
+                                                <!--  <div class="btn-group radio-group ml-2" data-toggle="buttons">
+                                                        <label class="btn btn-sm btn-primary btn-rounded waves-effect waves-light">
+                                                            <input type="radio" name="options" id="option2">Buy Ticket
+                                                        </label>
+                                                    </div> -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted black white-text">
+                            <p class="mb-0">2 days ago</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header black white-text">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-muted">Your Order</span>
+                                <span class="badge badge-dark badge-pill">3</span>
+                            </div>
+                        </div>
+                        <div class="">
+                            <ul class="list-group mb-3 z-depth-1">
+                                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div>
+                                        <h6 class="my-0">Product name</h6>
+                                        <small class="text-muted">Brief description</small>
+                                    </div>
+                                    <span class="text-muted">$12</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div>
+                                        <h6 class="my-0">Second product</h6>
+                                        <small class="text-muted">Brief description</small>
+                                    </div>
+                                    <span class="text-muted">$8</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div>
+                                        <h6 class="my-0">Third item</h6>
+                                        <small class="text-muted">Brief description</small>
+                                    </div>
+                                    <span class="text-muted">$5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between bg-light">
+                                    <div class="text-success">
+                                        <h6 class="my-0">Promo code</h6>
+                                        <small>EXAMPLECODE</small>
+                                    </div>
+                                    <span class="text-success">-$5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <span>Total (USD)</span>
+                                    <strong>$20</strong>
+                                </li>
+                            </ul>
+
+                            <form class="card p-2">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Promo code">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-secondary waves-effect waves-light">Redeem</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer text-muted black white-text">
+                            <p class="mb-0">Check Out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-3">
+            <div class="row">
+                <div class="border-right col-md-8">
+                    <div class="row">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="h4 text-muted ">Brewed | Recommended</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row py-2 hoverable align-items-center">
+                                <div class="col-6">
+                                    <a>
+                                        <img src="http://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+
+                                    <a class="pt-5">
+                                        <strong>iPad</strong>
+                                    </a>
+                                    <ul class="rating inline-ul">
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star grey-text"></i>
+                                        </li>
+                                    </ul>
+                                    <h6 class="h6-responsive font-weight-bold dark-grey-text">
+                                        <strong>$849</strong>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row py-2 hoverable align-items-center">
+                                <div class="col-6">
+                                    <a>
+                                        <img src="http://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+
+                                    <a class="pt-5">
+                                        <strong>iPad</strong>
+                                    </a>
+                                    <ul class="rating inline-ul">
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star grey-text"></i>
+                                        </li>
+                                    </ul>
+                                    <h6 class="h6-responsive font-weight-bold dark-grey-text">
+                                        <strong>$849</strong>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="h4 text-muted">Brewed | Near by</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row py-2 hoverable align-items-center">
+                                <div class="col-6">
+                                    <a>
+                                        <img src="http://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+
+                                    <a class="pt-5">
+                                        <strong>iPad</strong>
+                                    </a>
+                                    <ul class="rating inline-ul">
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star grey-text"></i>
+                                        </li>
+                                    </ul>
+                                    <h6 class="h6-responsive font-weight-bold dark-grey-text">
+                                        <strong>$849</strong>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row py-2 hoverable align-items-center">
+                                <div class="col-6">
+                                    <a>
+                                        <img src="http://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+
+                                    <a class="pt-5">
+                                        <strong>iPad</strong>
+                                    </a>
+                                    <ul class="rating inline-ul">
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star grey-text"></i>
+                                        </li>
+                                    </ul>
+                                    <h6 class="h6-responsive font-weight-bold dark-grey-text">
+                                        <strong>$849</strong>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="h4 text-muted">Brewed | Related</h2>
+                        </div>
+                        <div class="col-md-12">
+
+                            <div class="row py-2 hoverable align-items-center">
+                                <div class="col-6">
+                                    <a>
+                                        <img src="http://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+
+                                    <a class="pt-5">
+                                        <strong>iPad</strong>
+                                    </a>
+                                    <ul class="rating inline-ul">
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star grey-text"></i>
+                                        </li>
+                                    </ul>
+                                    <h6 class="h6-responsive font-weight-bold dark-grey-text">
+                                        <strong>$849</strong>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="h4 text-muted">&nbsp</h2>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row py-2 hoverable align-items-center">
+                                <div class="col-6">
+                                    <a>
+                                        <img src="http://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+
+                                    <a class="pt-5">
+                                        <strong>iPad</strong>
+                                    </a>
+                                    <ul class="rating inline-ul">
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star blue-text"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star grey-text"></i>
+                                        </li>
+                                    </ul>
+                                    <h6 class="h6-responsive font-weight-bold dark-grey-text">
+                                        <strong>$849</strong>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="container mt-3">
+        </section>
+
+        <section>
+            <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content form-elegant">
+                        <!--Header-->
+                        <div class="modal-header text-center">
+                            <h3 class="modal-title w-100 dark-grey-text font-weight-bold" id="myModalLabel">
+                                <strong>Sign in</strong>
+                            </h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mx-4">
+                            <!--Body-->
+                            <div class="md-form">
+                                <input type="email" id="Form-email1" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                            </div>
+
+                            <div class="md-form">
+                                <input type="password" id="Form-pass1" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                                <p class="font-small blue-text d-flex justify-content-end">Forgot
+                                    <a href="#" class="blue-text ml-1"> Password?</a>
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+                            </div>
+                            <p class="font-small dark-grey-text text-right d-flex justify-content-center pt-2"> or Sign in with:</p>
+
+                            <div class="row d-flex justify-content-center">
+                                <!--Facebook-->
+                                <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a">
+                                    <i class="fab fa-facebook"></i>
+                                </button>
+                                <!--Twitter-->
+                                <!--Google +-->
+                                <button type="button" class="btn btn-white btn-rounded z-depth-1a">
+                                    <i class="fab fa-google-plus"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <p class="font-small grey-text d-flex justify-content-end">Not a member?
+                                <a href="#" class="blue-text ml-1"> Sign Up</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade top" id="search-dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+                data-backdrop="true">
+                <div class="modal-dialog m-0  modal-frame modal-top modal-notify modal-info" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="md-form w-100">
+                                        <input type="search" id="form-autocomplete" class="form-control mdb-autocomplete">
+                                        <button class="mdb-autocomplete-clear">
+                                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
+                                                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                        </button>
+                                        <label for="form-autocomplete" class="active">What is your favorite US state?</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-3">
+<div class="row">
+    <div class="col-md-5" ></div>
+    <div class="col-md-7" style="background-image: url('/img/1.jpg')"></div>
+</div>
+        </section>
+    </main>
+
+
+    <footer id="footer" class="page-footer center-on-small-only unique-color-dark pt-0">
+        <div class="info-color-dark text-center py-4">
+            <a href="/" class="border rounded p-2 px-3 mr-4 d-none d-md-inline-block">Newsletter
+                <i class="fa fa-envelope white-text ml-2"> </i>
+            </a>
+            <a href="/" class="border rounded p-2 px-3 mr-4 d-none d-md-inline-block">Affiliate program
+                <i class="fa fa-money white-text ml-2"> </i>
+            </a>
+            <a href="/" data-toggle="modal" data-target="#contactForm" class="border rounded p-2 px-3 mr-4 d-none d-md-inline-block">Contact
+                <i class="fa fa-envelope white-text ml-2"> </i>
+            </a>
+            <a href="/">
+                <i class="fab fa-youtube white-text mr-4"> </i>
+            </a>
+            <a href="/">
+                <i class="fab fa-facebook white-text mr-4"> </i>
+            </a>
+            <a href="/">
+                <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <a href="/">
+                <i class="fab fa-instagram white-text mr-4"> </i>
+            </a>
+        </div>
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3">
+                <div class="col-md-2 col-lg-4 col-xl-3 mb-r">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Cites</strong>
+                    </h6>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                    <p>
+                        <a href="/">Bangalore</a>
+                    </p>
+                    <p>
+                        <a href="/">Mumbai</a>
+                    </p>
+                    <p>
+                        <a href="/">Hyderabad</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-3 mb-r">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Popular</strong>
+                    </h6>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="/">Nightlife things to do in bangalore</a>
+                    </p>
+                    <p>
+                        <a href="/">Best parties in bangalore</a>
+                    </p>
+                    <p>
+                        <a href="/">Events happening today in bangalore</a>
+                    </p>
+                    <p>
+                        <a href="/">Events this week in bangalore</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-3 mb-r">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Impartant Links</strong>
+                    </h6>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="/">Upcoming Events</a>
+                    </p>
+
+                    <p>
+                        <a href="/">Events Tags</a>
+                    </p>
+
+                    <p>
+                        <a href="/">Past Events</a>
+                    </p>
+
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Trending</strong>
+                    </h6>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> Brewed & Bros Certified Events
+                    </p>
+                    <p>
+                        <i class="fa fa-building mr-3"></i> Events this month in bangalore
+                    </p>
+                    <p>
+                        <a href="/">
+                            <i class="fa fa-users mr-3"></i> Events this week in bangalore
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mb-r">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Useful links</strong>
+                    </h6>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                    <p>
+                        <a href="/">License</a>
+                    </p>
+                    <p>
+                        <a href="/">ChangeLog</a>
+                    </p>
+                    <p>
+                        <a href="/">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a href="/">Return/Refund policy</a>
+                    </p>
+                    <p>
+                        <a href="/">Students and universities</a>
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mb-r">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Resources</strong>
+                    </h6>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="/">How To's</a>
+                    </p>
+                    <p>
+                        <a href="/">FAQ's</a>
+                    </p>
+                    <p>
+                        <a href="/">Blogs</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-3 mb-r">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Terms & Services</strong>
+                    </h6>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="/">Create Event</a>
+                    </p>
+
+                    <p>
+                        <a href="/">We're Hiring</a>
+                    </p>
+
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Company</strong>
+                    </h6>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> iman@bruebros.com
+                    </p>
+                    <p>
+                        <i class="fa fa-building mr-3"></i> Our story
+                    </p>
+                    <p>
+                        <a href="/">
+                            <i class="fa fa-users mr-3"></i> Our team
+                        </a>
+                    </p>
+                    <p>
+                        <a href="/">
+                            <i class="fa fa-bullhorn mr-3"></i> About Us
+                        </a>
+                    </p>
+                    <p>
+                        <a href="/">
+                            <i class="fa fa-phone mr-3"></i> Contact us
+                        </a>
+                    </p>
+                    <p>
+                        <a href="/">
+                            <i class="fa fa-bullhorn mr-3"></i> For media
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright py-1 text-center">
+            © 2018 Copyright:
+            <a href="/">
+                <strong> bruedbros.com</strong>
+            </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdbfull.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        var states = [
+            "Alabama",
+            "Alaska",
+            "Arizona",
+            "Arkansas",
+            "California",
+            "Colorado",
+            "Connecticut",
+            "Delaware",
+            "Florida",
+            "Georgia",
+            "Hawaii",
+            "Idaho",
+            "Illnois",
+            "Indiana",
+            "Iowa",
+            "Kansas",
+            "Kentucky",
+            "Louisiana",
+            "Maine",
+            "Maryland",
+            "Massachusetts",
+            "Michigan",
+            "Minnesota",
+            "Mississippi",
+            "Missouri",
+            "Montana",
+            "Nebraska",
+            "Nevada",
+            "New Hampshire",
+            "New Jersey",
+            "New Mexico",
+            "New York",
+            "North Carolina",
+            "North Dakota",
+            "Ohio",
+            "Oklahoma",
+            "Oregon",
+            "Pennsylvania",
+            "Rhode Island",
+            "South Carolina",
+            "South Dakota",
+            "Tennessee",
+            "Texas",
+            "Utah",
+            "Vermont",
+            "Virginia",
+            "Washington",
+            "West Virginia",
+            "Wisconsin",
+            "Wyoming"
+        ];
+
+        $('#form-autocomplete').mdb_autocomplete({
+            data: states
+        });
+        $("#horizontal-6").flip({
+            axis: 'y',
+            autoSize: true,
+            trigger: 'hover'
+        });
+    </script>
+</body>
+
+</html>
